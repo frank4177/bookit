@@ -8,14 +8,14 @@ const ResultsSection = () => {
     <>
       <div className="space-y-8">
         <div className="flex flex-row justify-between items-center">
-          <span>Results (25)</span>
+          <span className="text-colorGreen font-[600] text-[19px]">Results (25)</span>
 
-          <div className="max-w-[400px] w-full h-[40px] flex flex-row items-center justify-between text-[14px]">
-            <div className="bg-[#FFFFFF] text-colorGreen font-[500] max-w-[170px] h-[inherit] w-full rounded-[20px] flex flex-row items-center justify-center">
+          <div className="max-w-[400px] w-full h-[50px] flex flex-row items-center justify-between text-[14px]">
+            <div className="bg-[#FFFFFF] text-colorGreen font-[500] max-w-[170px] h-[inherit] w-full rounded-[25px] flex flex-row items-center justify-center">
               Filter
             </div>
 
-            <div className="bg-[#FFFFFF] text-colorGreen font-[500] max-w-[170px] h-[inherit] w-full rounded-[20px] p-3">
+            <div className="bg-[#FFFFFF] text-colorGreen font-[500] max-w-[170px] h-[inherit] w-full rounded-[25px] flex flex-row items-center justify-center">
             <select name="" id="" className="outline-none">
               <option value="">TICKET OF CLASS</option>
             </select>
