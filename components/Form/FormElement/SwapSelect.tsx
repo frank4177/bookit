@@ -15,7 +15,7 @@ const SwapSelect = () => {
   };
   return (
     <>
-      <div className="bg-bg-lightGreen flex flex-row items-center h-[60px] w-full max-w-[590px] justify-between px-5 rounded-[30px]">
+      <div className="bg-bg-lightGreen flex flex-row items-center h-[60px] w-full  justify-between px-5 rounded-[30px]">
         <div className="flex flex-row items-center  gap-1 ">
           <ImLocation />{" "}
           <select

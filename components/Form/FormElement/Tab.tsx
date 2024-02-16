@@ -14,7 +14,7 @@ const Tab = ({ data }: ITabProps) => {
   };
   return (
     <>
-      <div className="flex flex-row items-center gap-1 bg-bg-lightGreen h-[60px] w-full max-w-[590px] justify-between p-1 rounded-[40px]">
+      <div className="flex flex-row items-center gap-1 bg-bg-lightGreen h-[60px] w-full  justify-between p-1 rounded-[40px]">
         {data.map((item) => {
           const activeTab = item.id === selected ? "rounded-[30px] bg-bg-green text-white " : "text-colorGreen";
           return (

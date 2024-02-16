@@ -11,7 +11,7 @@ const Date = () => {
   const datePickerRef = useRef(null);
 
   return (
-    <div className="flex flex-row items-center gap-1 bg-bg-lightGreen h-[60px] max-w-[250px] justify-center px-3 rounded-[30px]">
+    <div className="flex flex-row items-center gap-1 bg-bg-lightGreen h-[60px] justify-center px-3 rounded-[30px]">
       <HiOutlineCalendarDays
         color="#3D5654"
         size={20}

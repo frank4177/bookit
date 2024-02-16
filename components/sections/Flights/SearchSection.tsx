@@ -13,7 +13,7 @@ import { PiArmchairFill } from "react-icons/pi";
 const SearchSection = () => {
   return (
     <>
-      <div className="  bg-white rounded-[30px] p-3 result  gap-5 ">
+      <div className="  bg-white rounded-[30px] p-5 result  gap-5 ">
         <SwapSelect />
         <Date />
         <Select
@@ -25,7 +25,7 @@ const SearchSection = () => {
           options={classOptions}
           icon={<PiArmchairFill className="iconStyle" />}
         />
-        <Button title="Search" classNam="h-[60px] max-w-[250px]"/>
+        <Button title="Search" classNam="h-[60px] "/>
       </div>
     </>
   );
