@@ -25,7 +25,7 @@ const SearchSection = () => {
           options={classOptions}
           icon={<PiArmchairFill className="iconStyle" />}
         />
-        <Button title="Search" className="h-[60px] max-w-[300px]"/>
+        <Button title="Search" classNam="h-[60px] max-w-[300px]"/>
       </div>
     </>
   );

@@ -14,9 +14,9 @@ const TicketCard = ({ data, index, dataLength }: ITicketCardTypes) => {
   return (
     <>
       <div
-        className={`h-[150px] bg-white rounded-[20px] max-w-[1000px] w-full ${
+        className={`h-[150px] bg-white rounded-[20px] w-full ${
           isLastItem ? "" : "border-b-[2px]"
-        }  border-dashed border-gray-300 relative flex flex-row items-center justify-between px-10`}
+        }  border-dashed border-gray-300 relative flex flex-row items-center justify-between px-6`}
       >
         <Image
           src={data?.airlineLogo}
@@ -58,7 +58,7 @@ const TicketCard = ({ data, index, dataLength }: ITicketCardTypes) => {
           </span>
           <Button
             title="Book Now"
-            className=" h-[30px] w-[150px]"
+            classNam="h-[30px] w-[100px]"
           />
         </div>
 

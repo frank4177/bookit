@@ -6,7 +6,7 @@ interface IButtonProps {
   width?: string;
   borderRadius?: string;
   handleClick?: () => void;
-  className?: string;
+  classNam?: string;
   loader?: JSX.Element;
   loading?: boolean;
 }
@@ -14,14 +14,14 @@ interface IButtonProps {
 const Button = ({
   title,
   handleClick,
-  className,
+  classNam,
   loader,
   loading,
 }: IButtonProps) => {
   const btnTitle = title ? title : "Button";
   return (
     <button
-      className={`bg-goldenBrown flex flex-row items-center text-[14px] text-white font-[600]  w-full justify-center gap-2 ${className} border-none rounded-[30px]`}
+      className={`bg-goldenBrown flex flex-row items-center text-[14px] text-white font-[600] justify-center gap-2 ${classNam} border-none rounded-[30px]`}
       onClick={handleClick}
     >
       {btnTitle}
