@@ -14,7 +14,7 @@ export const sidebarMenuData = [
   },
   {
     id: 2,
-    route: "/flights",
+    route: "/",
     title: "Flights",
     icon: <PiAirplaneTilt color="#C99C33" size={25} />,
   },

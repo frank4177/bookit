@@ -17,7 +17,7 @@ const Avatar = ({ data, count }: IAvatarProps) => {
             src={item.image}
             height={50}
             width={50}
-            className={`w-[40px] h-[40px] rounded-full bg-pink-700 border-[3px] border-[#425C5A] ${
+            className={`w-[40px] h-[40px] rounded-full  border-[3px] border-[#425C5A] ${
               index !== 0 ? "-ml-[10px]" : ""
             } z-10 overflow-hidden`}
             key={item.id}

@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import ProfilePicture from "./ProfilePicture";
 import { sidebarMenuData, avatarData } from "@/constants";
 import { usePathname } from "next/navigation";
@@ -11,8 +11,11 @@ import Image from "next/image";
 const Sidebar = () => {
   const pathname = usePathname();
 
+  const path = pathname ? pathname : "/flights"
+
+
   return (
-    <div className="w-[17%]  bg-bg-green rounded-r-[40px] flex flex-col space-y-9 py-3 overflow-hidden">
+    <div className="w-[17rem]  bg-bg-green rounded-r-[40px] flex flex-col space-y-9 py-3 overflow-hidden">
       {/* Profile Details */}
       <div className="flex flex-col items-center space-y-1 my-4">
         <ProfilePicture />
