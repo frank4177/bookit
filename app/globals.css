@@ -113,6 +113,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   background: #425c5a;
   border-radius: 25px;
   background: lightgray;
+  /* z-index: -20; */
 }
 input[type="range"]::-webkit-slider-thumb {
   height: 20px;
@@ -123,7 +124,6 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -8px;
   border: none;
-  z-index: 6;
 }
 input[type="range"]:focus::-webkit-slider-runnable-track {
   background: lightgray;
@@ -144,7 +144,6 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
      &:nth-child(1) {
         &::-webkit-slider-thumb::before {
            background-color: #c99c33;
-           z-index: 5;
         }
      }
 

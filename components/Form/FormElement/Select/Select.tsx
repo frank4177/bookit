@@ -10,10 +10,10 @@ interface ISelectProps{
 const Select = ({options, icon}: ISelectProps) => {
   return (
     <>
-        <div className="flex flex-row items-center gap-1 bg-bg-lightGreen h-[60px] max-w-[280px]  px-3 rounded-[30px] ">
+        <div className="flex flex-row items-center gap-1 bg-bg-lightGreen h-[60px] max-w-[250px] justify-center px-3 rounded-[30px] ">
           {icon}
           <select
-            className="max- bg-[inherit]  text-[13px] outline-none text-colorGreen font-[600] px-1 sele"
+            className="max- bg-[inherit] w-[150px] text-[13px] outline-none text-colorGreen font-[600] px-1 sele"
           >
             {options.map((item)=> (
               <option value="en" key={item.id}>{item.option}</option>
