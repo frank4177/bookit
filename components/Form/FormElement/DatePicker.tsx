@@ -1,14 +1,13 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, {  useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { HiOutlineCalendarDays } from "react-icons/hi2";
 
-const Date = () => {
-  //  const today = new Date()
-  const [selectedDate, setSelectedDate] = useState<any>();
-  const datePickerRef = useRef(null);
+const DateComponent = () => {
+  const currentDate = new Date();
+  const [selectedDate, setSelectedDate] = useState<Date | null>(currentDate);
 
   return (
     <div className="flex flex-row items-center gap-1 bg-bg-lightGreen h-[60px] justify-center px-3 rounded-[30px]">
@@ -28,4 +27,4 @@ const Date = () => {
   );
 };
 
-export default Date;
+export default DateComponent;
