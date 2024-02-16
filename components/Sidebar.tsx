@@ -15,9 +15,9 @@ const Sidebar = () => {
 
 
   return (
-    <div className="w-[17rem]  bg-bg-green rounded-r-[40px] flex flex-col space-y-9 py-3 overflow-hidden">
+    <div className="w-[17rem]  bg-bg-green rounded-r-[40px] flex flex-col space-y-7 overflow-hidden">
       {/* Profile Details */}
-      <div className="flex flex-col items-center space-y-1 my-4">
+      <div className="flex flex-col items-center space-y-2 my-4">
         <ProfilePicture />
         <span className="text-white text-[22px] font-[500]">ALEX JOHNSON</span>
         <span className="text-white text-[12px]">alex.johnson@gmail.com</span>
@@ -34,8 +34,8 @@ const Sidebar = () => {
             return (
               <li key={item.id}>
                 {item.route === pathname ? (
-                  <div className={`h-6 ${activePath}`}>
-                    <div className="h-[inherit] bg-[#425C5A] rounded-br-[50px]"></div>
+                  <div className={`h-6 ${activePath} border-none`}>
+                    <div className="h-[inherit] bg-[#425C5A] rounded-br-[50px] border-none"></div>
                   </div>
                 ) : null}
 
@@ -49,8 +49,8 @@ const Sidebar = () => {
                 </Link>
 
                 {item.route === pathname ? (
-                  <div className={`h-6 ${activePath}`}>
-                    <div className="h-[inherit] bg-[#425C5A] rounded-tr-[50px]"></div>
+                  <div className={`h-6 ${activePath} border-none`}>
+                    <div className="h-[inherit] bg-[#425C5A] rounded-tr-[50px] border-none"></div>
                   </div>
                 ) : null}
               </li>
