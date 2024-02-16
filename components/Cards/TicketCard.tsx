@@ -58,7 +58,7 @@ const TicketCard = ({ data, index, dataLength }: ITicketCardTypes) => {
           </span>
           <Button
             title="Book Now"
-            className="bg-bg-lightGreen h-[30px] w-[150px]"
+            className="bg-bg-lightGreen h-[30px] w-[160px]"
           />
         </div>
 
